@@ -45,6 +45,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  # ChuckNorris API config
+  config.chuck_norris_api_url = 'https://api.chucknorris.io/jokes'
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
