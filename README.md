@@ -1,24 +1,11 @@
-# README
+# Inspiring Benefits Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## How to run the application
 
-Things you may want to cover:
+1. Create database, run migrations and seeds.
 
-* Ruby version
+  `$ rails db:setup`
 
-* System dependencies
+2. Execute the Rails server.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  `$ rails s`
