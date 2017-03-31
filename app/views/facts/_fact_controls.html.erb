@@ -1,0 +1,18 @@
+<%= link_to 'Get a random fact', random_path %>
+
+<br>
+Get a category random fact:
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= link_to category, category_path(category: category) %></li>
+  <% end %>
+</ul>
+
+<br>
+Get a query fact:
+
+<%= form_tag('/search', method: 'get') do %>
+  <%= label_tag(:query, "Search for:") %>
+  <%= text_field_tag(:query, @query) %>
+  <%= submit_tag("Search") %>
+<% end %>

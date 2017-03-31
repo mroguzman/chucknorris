@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'faraday', '~> 0.11'
+gem 'kaminari', '~> 0.17'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

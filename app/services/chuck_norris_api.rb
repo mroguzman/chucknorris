@@ -14,7 +14,7 @@ class ChuckNorrisAPI
   def self.search(query)
     response = Faraday.get("#{Rails.configuration.chuck_norris_api_url}/search", query: query)
 
-    parse_response(response)
+    parse_response(response)['result']
   end
 
   def self.categories

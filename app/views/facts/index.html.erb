@@ -1,0 +1,11 @@
+<%= render 'fact_controls' %>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Fact</th>
+  </tr>
+  <%= render partial: 'fact', collection: @facts %>
+</table>
+
+<%= paginate @facts %>
